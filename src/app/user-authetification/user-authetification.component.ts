@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class UserAuthetificationComponent implements OnInit {
 statut : String;
-name_user : String;
+nameuser : String;
 password: String;
 acces: boolean;
 dataUser : any;
@@ -17,26 +17,26 @@ constructor(public apiService: ApiService) {
   }
 
   ngOnInit() {
-    this.name_user = '';
+    this.nameuser = '';
     this.acces = false;
     this.password = '';
     this.statut = '';
     this.dataUser = [];
-    this.loggin(this.name_user, this.password);
+    this.acces = this.loggin(this.nameuser, this.password);
   }
 
-  getUserById(name_user) {
-    this.apiService.getUserById(name_user).subscribe(response => {
+  getUserById(nameuser) {
+    this.apiService.getUserById(nameuser).subscribe(response => {
       console.log(response);
       this.dataUser = response;
       this.statut = response.statut;
       this.password = response.password;
     })
   }
-loggin(name_user, password): boolean {
-this.name_user = name_user;
-this.getUserById(name_user);
-if (((this.password = '') || (this.name_user = '')) && (this.dataUser = []))
+loggin(nameuser, password): boolean {
+this.nameuser = nameuser;
+this.getUserById(nameuser);
+if (((password = '') || (this.nameuser = '')) && (this.dataUser = []))
 return this.acces = false;
 else{
 if (password == this.password)

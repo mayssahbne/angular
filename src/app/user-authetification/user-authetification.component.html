@@ -10,10 +10,11 @@
     <h1>Connexion</h1>
 
     <label><b>Nom d'utilisateur</b></label>
-    <input type="text" placeholder="Entrer le nom d'utilisateur" name="name_user" required   [(ngModel)]="name_user">
+    <input type="text" placeholder="Entrer le nom d'utilisateur" name="nameuser" required   [(ngModel)]="nameuser">
 
     <label><b>Mot de passe</b></label>
     <input type="password" placeholder="Entrer le mot de passe" name="password" required  [(ngModel)]="password" >
 
-    <input type="submit" id='submit' value='LOGIN' onclick=onchange="loggin('user_name','password')">
-
+    <input type="submit" id="submit" value="LOGIN" onclick="loggin('nameuser','password')">
+  </form>
+</div>

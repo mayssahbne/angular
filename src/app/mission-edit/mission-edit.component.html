@@ -1,1 +1,43 @@
-<p>mission-edit works!</p>
+<div id="container">
+
+  <h3>Update Mission</h3>
+  <div class="form-group">
+    <label for="name">Nom de la mission</label>
+    <input type="text" class="form-control" id="name" [(ngModel)]="data.mission_name" placeholder="Entrer le nom de la mission">
+  </div>
+  <div class="form-group">
+    <label for="user">Nom du client</label>
+    <input type="text" class="form-control" id="user" [(ngModel)]="data.name_user" placeholder="Entrer nom du client">
+  </div>
+  <div class="form-group">
+    <label for="ville">Ville</label>
+    <input type="text" class="form-control" id="ville" [(ngModel)]="data.ville" placeholder="Enter Ville">
+  </div>
+  <div class="form-group">
+    <label for="dep">Departement</label>
+    <input type="text" class="form-control" id="dep" [(ngModel)]="data.departement" placeholder="Enter Departement">
+  </div>
+  <div class="form-group">
+    <label for="start_date">Année de debut de la mission</label>
+    <input type="number"  class="form-control" id="start_date" [(ngModel)]="data.start_date" placeholder="2019" min="2017" max="2100">
+  </div>
+  <div class="form-group">
+    <label for="end_date">Année de fin de la mission</label>
+    <input type="number" placeholder="2019" min="2017" max="2100" class="form-control" id="end_date" [(ngModel)]="data.end_date" >
+  </div>
+  <div class="form-group">
+    <label for="detail_mission">Detail des prestations</label>
+    <input type="text" class="form-control" id="detail_mission" [(ngModel)]="data.detail_mission" placeholder="Enter mission detail">
+  </div>
+  <div class="form-group">
+    <label for="image_mission">Image</label>
+    <input type="text" class="form-control" id="image_mission" [(ngModel)]="data.image_mission" placeholder="image">
+  </div>
+  <div class="form-group">
+    <label for="domaine_tech">Domaine technique</label>
+    <select type="text" id="domaine_tech" class="form-control" [(ngModel)]="data.domaine_tech">
+
+    </select>
+  <button type="submit" class="btn btn-success" (click)="update()">Update</button>
+  <button type="submit" class="btn btn-warning ml-1" [routerLink]="[ '/list']">Cancel</button>
+</div>

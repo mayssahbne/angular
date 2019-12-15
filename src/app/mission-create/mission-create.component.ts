@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 export class MissionCreateComponent implements OnInit {
 
   data: Mission
+  number='Bâtiment';
+  numbers=['Industrie','Aménagement Urbain','Transport,Industrie','Eau','Environnement','Energie']
 
   constructor(
     public apiService: ApiService,
@@ -20,10 +22,13 @@ export class MissionCreateComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
 
   submitForm() {
+
     this.apiService.createItem(this.data).subscribe((response) => {
+
       this.router.navigate(['list']);
     });
 

@@ -1,0 +1,68 @@
+{
+  "missions": [
+    {
+      "mission_name": "Plomberie",
+      "name_user": "medjnoun",
+      "ville": "marseille",
+      "departement": 13009,
+      "start_date": 2017,
+      "end_date": 2020,
+      "detail_mission": "changement tuilleu",
+      "image_mission": "image",
+      "domaine_tech": "Industrie",
+      "id": 4
+    },
+    {
+      "departement": "2019-12-04",
+      "mission_name": "Amine ABICHOU",
+      "name_user": "Amine ABICHOU",
+      "ville": "paris",
+      "end_date": 2017,
+      "detail_mission": "kkkkkkkkkkkkkkkkk",
+      "domaine_tech": "Energie",
+      "id": 7
+    },
+    {
+      "end_date": 2020,
+      "start_date": 2019,
+      "id": 8
+    },
+    {
+      "id": 10
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name_user": "fazia",
+      "statut": "salarie",
+      "password": "fazia",
+      "email": "x@x.com",
+      "tel": "0232314512"
+    },
+    {
+      "id": "2",
+      "name_user": "chabha",
+      "statut": "chef de projet",
+      "password": "chabha",
+      "email": "test@test.com",
+      "tel": "0660767248"
+    },
+    {
+      "id": "3",
+      "name_user": "jullien",
+      "statut": "Administrateur",
+      "password": "jullien",
+      "email": "jullien@test.com",
+      "tel": "066897428"
+    },
+    {
+      "id": "4",
+      "name_user": "visiteur",
+      "statut": "visiteur",
+      "password": "ayoub",
+      "email": "jullien@test.com",
+      "tel": "0668925647"
+    }
+  ]
+}
