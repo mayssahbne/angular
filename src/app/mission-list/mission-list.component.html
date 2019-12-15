@@ -1,0 +1,40 @@
+<div class="container">
+  <h3>List All Missions</h3>
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nom de la mission</th>
+      <th scope="col">Nom du client</th>
+      <th scope="col">Ville</th>
+      <th scope="col">Departement</th>
+      <th scope="col">Année de debut</th>
+      <th scope="col">Année de fin</th>
+      <th scope="col">Detail des prestations</th>
+      <th scope="col">Image</th>
+      <th scope="col">Domaine technique</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of missionsData">
+      <td>{{item.id}}</td>
+      <td>{{item.mission_name}}</td>
+      <td>{{item.name_user}}</td>
+      <td>{{item.ville}}</td>
+      <td>{{item.departement}}</td>
+      <td>{{item.start_date}}</td>
+      <td>{{item.end_date}}</td>
+      <td>{{item.detail_mission}}</td>
+      <td>{{item.image_mission}}</td>
+      <td>{{item.domaine_tech}}</td>
+      <td style="display: flex">
+        <button type="button" class="btn btn-warning btn-sm" [routerLink]="[ '/edit/${item.id}']">Edit</button>
+        <button type="button" class="btn btn-danger btn-sm ml-1" (click)="delete(item)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <button type="button" class="btn btn-success" [routerLink]="[ '/create']">Add Mission</button>
+</div>

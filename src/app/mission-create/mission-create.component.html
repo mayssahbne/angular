@@ -1,0 +1,42 @@
+<div class="container">
+
+  <h3>Create Mission Record</h3>
+
+  <div class="form-group">
+    <label for="name">Nom de la mission</label>
+    <input type="text" class="form-control" id="name" [(ngModel)]="data.mission_name" placeholder="Enter Mission Name">
+  </div>
+  <div class="form-group">
+    <label for="user">Nom du client</label>
+    <input type="text" class="form-control" id="user" [(ngModel)]="data.name_user" placeholder="Enter client Name">
+  </div>
+  <div class="form-group">
+    <label for="ville">Ville</label>
+    <input type="text" class="form-control" id="ville" [(ngModel)]="data.ville" placeholder="Enter Ville">
+  </div>
+  <div class="form-group">
+    <label for="dep">Departement</label>
+    <input type="text" class="form-control" id="dep" [(ngModel)]="data.start_date" placeholder="Enter Departement">
+  </div>
+  <div class="form-group">
+    <label for="start_date">Année de debut de la mission</label>
+    <input type="date" class="form-control" id="start_date" [(ngModel)]="data.start_date" placeholder="Enter start date">
+  </div>
+  <div class="form-group">
+    <label for="end_date">Année de fin de la mission</label>
+    <input type="date" class="form-control" id="end_date" [(ngModel)]="data.end_date" placeholder="Enter end date">
+  </div>
+  <div class="form-group">
+    <label for="detail_mission">Detail des prestations</label>
+    <input type="text" class="form-control" id="detail_mission" [(ngModel)]="data.detail_mission" placeholder="Enter mission detail">
+  </div>
+  <div class="form-group">
+    <label for="image_mission">Image</label>
+    <input type="text" class="form-control" id="image_mission" [(ngModel)]="data.image_mission" placeholder="image">
+  </div>
+  <div class="form-group">
+    <label for="domaine_tech">Domaine technique</label>
+    <input type="text" class="form-control" id="domaine_tech" [(ngModel)]="data.domaine_tech" placeholder="enter technical domain">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="submitForm()">Add</button>
+</div>
